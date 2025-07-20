@@ -8,10 +8,12 @@ import '../Widgets/text_field.dart';
 class LoginScreenConent extends StatelessWidget {
   final double height;
   final double width;
+  final VoidCallback onLoginPressed;
   const LoginScreenConent({
     super.key,
     required this.height,
     required this.width,
+    required this.onLoginPressed,
   });
   @override
   Widget build(BuildContext context) {
@@ -57,9 +59,7 @@ class LoginScreenConent extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
             ),
-            onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text(AppStrings.loginScreenLoginButton)),
-            ),
+            onPressed: onLoginPressed,
             child: Text(AppStrings.loginScreenLoginButton),
           ),
           Padding(
