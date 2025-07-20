@@ -90,6 +90,3 @@ assets/
 
 For any questions, feel free to reach out via [GitHub Issues](https://github.com/Hebabo/ITI_Task4.1/issues).
 
----
-
-Would you like this in Arabic or both English & Arabic? Or should I generate the screenshots placeholders for you too?
